@@ -1,0 +1,31 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row__items {
+  display: flex;
+  overflow-y: hidden;
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+.row__items::-webkit-scrollbar {
+  display: none;
+}
+
+.row__item {
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__item:hover {
+  transform: scale(1.08);
+}
+
+.row__itemLarge {
+  max-height: 250px;
+}
